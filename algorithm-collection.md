@@ -1,5 +1,4 @@
 # Algorithms Collection
-This file is a collection of useful algorithms.
-Think carefully when you add contents to it.
+Jue's collection of algorithms that he would like to review.
 ## Array
 Rotate Array: Approach 3
