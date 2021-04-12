@@ -1,7 +1,7 @@
 ### Tips
 -  2 pointer 
 
-### Remove-duplicates-from-sorted-list
+### [Remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
 ```java
   /**
  * Definition for singly-linked list.
