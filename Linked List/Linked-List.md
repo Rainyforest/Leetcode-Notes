@@ -42,3 +42,30 @@ public ListNode deleteDuplicates(ListNode head) {
     return head;
 }
 ```
+
+### [Rotate-list](https://leetcode.com/problems/rotate-list/)
+```java
+class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head == null) return head;
+        int len = 0;
+        ListNode curr1 = head;
+        for(curr1 = head; curr1.next != null; curr1 = curr1.next){
+            len ++;
+        }
+        len ++;
+        k %= len;
+        if(k == 0)return head;
+        int counter = 0;
+        ListNode curr2 = head;
+        for(curr2 = head; counter < len - k - 1; curr2 = curr2.next){
+            counter ++;
+        }
+        ListNode newHead = curr2.next;
+        curr2.next = null;
+        curr1.next = head;
+    
+        return newHead;
+    }
+}
+```
